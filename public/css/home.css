@@ -1,0 +1,269 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-image: url(https://images4.alphacoders.com/909/thumb-1920-909912.png);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.bot-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 106px;
+}
+
+.bot-avatar img {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+    z-index: 2;
+}
+
+.bot-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    color:#b45a44;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: #181b24;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bot-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 50;
+}
+
+.bot-profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bot-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 50px;
+}
+
+#after-header {
+  background-color: #f2f2f2;
+  height: 16px;
+  position: relative;
+}
+
+#after-header::before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 100%;
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+#after-header img {
+  width: 100%;
+  height: 16px;
+}
+
+/* Menu en haut à droite */
+.right-top-menu {
+    height: 100%;
+}
+
+.right-top-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.right-top-menu li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.right-top-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.right-top-menu button {
+    border: none;
+    background-color: #b45a44;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.right-top-menu button:hover,
+.right-top-menu button:focus {
+    transform: scale(1.1);
+}
+
+/* Menu en haut à gauche */
+.left-top-menu {
+    float: left;
+    height: 100%;
+    margin-right: auto;
+}
+
+.left-top-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.left-top-menu li {
+    list-style: none;
+    
+}
+
+.left-top-menu ul li a {
+    text-decoration: none;
+
+    border: none;
+    color:  #b45a44;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+.left-top-menu ul li a:hover {
+    background-color:  #b45a44;
+    color: #000;
+}
+
+/* Modifie le texte des boutons de gauche du header */
+nav.left-top-menu ul li.top-btn a {
+    color: #fff;
+    text-decoration: none;
+    padding-inline: 25px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #181b24;
+    color: #b45a44;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Positionnement du footer en bas */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Modifie le fonctionnement des boutons de gauche du header */
+nav.left-top-menu ul li.top-btn:hover a {
+    color: #b45a44;
+    transition: 0.3s all;
+}
+
+/* Modifie le texte des boutons de droite du header */
+nav.right-top-menu ul li.top-btn a {
+    color: #fff;
+    text-decoration: none;
+    padding-inline: 25px;
+    font-weight: bold;
+}
+
+/* Image à gauche du header */
+header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+}
+
+/* Titre à gauche du header */
+header h1 {
+    color: #b45a44;
+    line-height: 20px;
+    float: left;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Gérer l'animation */
+#myCanvas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+#before-footer {
+  background-color: #f2f2f2;
+  height: 15px;
+  position: relative;
+}
+
+#before-footer::before {
+  content: "";
+  display: block;
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+#before-footer img {
+    width: 100%;
+    height: 16px;
+  }
